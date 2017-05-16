@@ -1,3 +1,10 @@
+import sys
+
+#Check Python version
+if (sys.version_info.major < 3):
+    print("Python 3+ is required.")
+    quit()
+
 #Pygame install wizard, imports
 try:
     import pygame
@@ -13,7 +20,7 @@ except ImportError:
     else:
         quit()
 
-import sys, random, math, nullfighter_sprites
+import random, math, nullfighter_sprites
 
 #Initialize pygame and menu
 pygame.init()
